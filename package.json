@@ -1,0 +1,45 @@
+{
+  "name": "@inbin/mcp",
+  "version": "0.1.1",
+  "description": "Stdio MCP wrapper for Inbin — lets Claude Desktop and other stdio-only MCP clients talk to Inbin's remote HTTP MCP endpoint using a single INBIN_API_KEY environment variable.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "inbin",
+    "email",
+    "webhook",
+    "stdio",
+    "cli"
+  ],
+  "homepage": "https://inbin.dev",
+  "bugs": "https://inbin.dev/",
+  "license": "MIT",
+  "author": "Inbin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaotsakpo/inbin-mcp.git"
+  },
+  "type": "module",
+  "bin": {
+    "inbin-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "mcpName": "io.github.yaotsakpo/inbin",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --target=node18 --outfile=dist/index.js --banner:js='#!/usr/bin/env node' && chmod +x dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.4.0"
+  }
+}
