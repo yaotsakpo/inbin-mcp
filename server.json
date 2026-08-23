@@ -6,13 +6,13 @@
     "url": "https://github.com/yaotsakpo/inbin-mcp",
     "source": "github"
   },
-  "version": "0.1.1",
+  "version": "0.2.0",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@inbin/mcp",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "transport": {
         "type": "stdio"
       },
@@ -29,7 +29,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://inbin.dev/api/mcp",
+      "url": "https://api.inbin.dev/mcp",
       "headers": [
         {
           "name": "Authorization",

@@ -4,7 +4,7 @@
  * A minimal stdio MCP proxy for Inbin. Bridges stdio-only MCP clients
  * (Claude Desktop today, some older Cursor / Zed / Cline builds) to
  * Inbin's remote Streamable-HTTP MCP endpoint at
- * https://inbin.dev/api/mcp.
+ * https://api.inbin.dev/mcp.
  *
  * Design:
  *   - We do not re-implement any MCP method. Every stdin message is
@@ -27,7 +27,7 @@ import { createInterface } from "node:readline";
 
 const API_KEY = process.env["INBIN_API_KEY"];
 const ENDPOINT =
-  process.env["INBIN_MCP_URL"] || "https://inbin.dev/api/mcp";
+  process.env["INBIN_MCP_URL"] || "https://api.inbin.dev/mcp";
 const DEBUG = process.env["INBIN_MCP_DEBUG"] === "1";
 
 function debug(...args: unknown[]): void {

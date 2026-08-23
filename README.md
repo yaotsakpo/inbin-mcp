@@ -3,7 +3,7 @@
 A minimal stdio-to-HTTP proxy for [Inbin](https://inbin.dev)'s Model
 Context Protocol surface. Lets stdio-only MCP clients (Claude Desktop,
 some Cursor builds, Zed, Cline) talk to Inbin's remote endpoint at
-`https://inbin.dev/api/mcp`.
+`https://api.inbin.dev/mcp`.
 
 ## Install & run
 
@@ -27,7 +27,7 @@ Get an API key from https://inbin.dev/dashboard.
 
 ## What it does
 
-- Forwards each stdin JSON-RPC message to `https://inbin.dev/api/mcp`
+- Forwards each stdin JSON-RPC message to `https://api.inbin.dev/mcp`
   as an HTTPS POST with your Bearer key.
 - Streams the response back to stdout.
 - Notifications (messages with no `id`) get no reply, per JSON-RPC.
@@ -41,6 +41,8 @@ Every Inbin application is an MCP server. Available tools:
 - `list_events` — filter by inbox / status / since; paginated
 - `search_events` — substring search over id / subject / from / to
 - `get_event` — a single event's parsed JSON + delivery history
+- `query_events` — filter, sort, group and aggregate over extracted
+  records (your inbox as a table)
 - `describe_schema` — the current extraction schema
 
 ## Environment
@@ -60,7 +62,7 @@ wrapper entirely and connect directly:
 {
   "mcpServers": {
     "inbin": {
-      "url": "https://inbin.dev/api/mcp",
+      "url": "https://api.inbin.dev/mcp",
       "headers": {
         "Authorization": "Bearer ink_live_..."
       }
