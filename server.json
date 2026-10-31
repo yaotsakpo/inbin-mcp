@@ -1,12 +1,12 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.github.yaotsakpo/inbin",
-  "description": "Query Inbin's parsed email events (newsletters, invoices, alerts) as typed JSON tools.",
+  "description": "No-signup email for AI agents over MCP: trial inbox, verification codes, parsed email events.",
   "repository": {
     "url": "https://github.com/yaotsakpo/inbin-mcp",
     "source": "github"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "packages": [
     {
       "registryType": "npm",
@@ -33,8 +33,8 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer <your-inbin-api-key>",
-          "isRequired": true,
+          "description": "Optional: Bearer <your-inbin-api-key>. Leave it out to use the five no-account tools (create_trial_inbox, await_trial_inbox, claim_trial_inbox, await_trial_inbox_claim, claim_connection_status). Every other tool needs the key.",
+          "isRequired": false,
           "isSecret": true
         }
       ]
