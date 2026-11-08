@@ -1,5 +1,7 @@
 # @inbin/mcp
 
+[![mcptry](https://mcptry.com/badge/io.github.yaotsakpo/inbin)](https://mcptry.com/servers/io.github.yaotsakpo/inbin)
+
 A minimal stdio-to-HTTP proxy for [Inbin](https://inbin.dev)'s Model
 Context Protocol surface. Lets stdio-only MCP clients (Claude Desktop,
 some Cursor builds, Zed, Cline) talk to Inbin's remote endpoint at
