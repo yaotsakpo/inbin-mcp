@@ -61,6 +61,22 @@ Every Inbin application is an MCP server. With a key, the tools include (ask `to
 - `query_events`: filter, sort, group and aggregate over extracted
   records (your inbox as a table)
 - `describe_schema`: the current extraction schema
+- `send_email`: send through Inbin's gate (replies to people you deal
+  with go out; a new address is held for the owner's approval)
+
+### Meetings
+
+Invite the agent's Inbin address to a Google Meet call like anyone else.
+It joins under its own name, takes notes, and, if the owner allows it,
+answers out loud from only what the owner allowed for that meeting,
+handing decisions back to the owner. With a key:
+
+- `list_meetings`: the meetings your agents were invited to, with state
+- `get_meeting_report`: the report, including each line the agent said
+  and the approved item it came from
+- `get_meeting_transcript`: what was said, in order (untrusted speech)
+- `search_meetings`: search across meeting transcripts and reports
+- `pause_meetings` / `leave_meeting`: stop joining, or leave a call now
 
 ## Environment
 

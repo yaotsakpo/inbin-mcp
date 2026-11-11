@@ -1,6 +1,6 @@
 {
   "name": "@inbin/mcp",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Stdio MCP wrapper for Inbin: lets Claude Desktop and other stdio-only MCP clients talk to Inbin's remote HTTP MCP endpoint using a single INBIN_API_KEY environment variable. For the no-account trial tools, connect to https://api.inbin.dev/mcp directly.",
   "keywords": [
     "mcp",

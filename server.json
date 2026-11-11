@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.yaotsakpo/inbin",
-  "title": "Inbin: email for AI agents",
-  "description": "Email for AI agents you can trust: disposable inboxes, verification codes, checked mail, held sends.",
+  "title": "Inbin: email and meetings for AI agents",
+  "description": "Email and meetings for AI agents you can trust: checked mail, held sends, Meet calls you approve.",
   "websiteUrl": "https://inbin.dev",
   "icons": [
     {
@@ -24,13 +24,13 @@
     "url": "https://github.com/yaotsakpo/inbin-mcp",
     "source": "github"
   },
-  "version": "0.3.1",
+  "version": "0.4.0",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@inbin/mcp",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "transport": {
         "type": "stdio"
       },
