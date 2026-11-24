@@ -1,6 +1,7 @@
 # @inbin/mcp
 
 [![mcptry](https://mcptry.com/badge/io.github.yaotsakpo/inbin)](https://mcptry.com/servers/io.github.yaotsakpo/inbin)
+[![Glama](https://glama.ai/mcp/servers/yaotsakpo/inbin-mcp/badge)](https://glama.ai/mcp/servers/yaotsakpo/inbin-mcp)
 
 A minimal stdio-to-HTTP proxy for [Inbin](https://inbin.dev)'s Model
 Context Protocol surface. Lets stdio-only MCP clients (Claude Desktop,
